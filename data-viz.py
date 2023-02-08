@@ -16,6 +16,7 @@ tests_cases = px.scatter(covid_table,
 tests_cases.show()
 
 hist_cases_per_mill = px.histogram(covid_table, 
-                                   x = "total_cases_per_mill")
+                                   x = "total_cases_per_mill",
+                                   nbins = 30)
 hist_cases_per_mill.show()
 
