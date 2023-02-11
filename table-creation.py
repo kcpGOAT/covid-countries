@@ -1,6 +1,7 @@
 # Method 1: Pandas only
 
 import pandas as pd
+
 covid_table = pd.DataFrame(data = covid_table, columns = ["id", "country", "total_cases", "new_cases",
                                                           "total_deaths", "new_deaths", "total_recovered",
                                                           "new_recovered", "active_cases", "active_critical_cases", 
