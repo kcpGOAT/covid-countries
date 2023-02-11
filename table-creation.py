@@ -1,4 +1,4 @@
-# With only pandas
+# Method 1: Pandas only
 
 import pandas as pd
 covid_table = pd.DataFrame(data = covid_table, columns = ["id", "country", "total_cases", "new_cases",
@@ -21,7 +21,7 @@ numeric_cols = covid_table.drop(columns = ["country", "continent"]).columns
 for i in numeric_cols:
     covid_table[i] = covid_table[i].astype(float)
     
-# With pandas and polars
+# Method 2: Using pandas and polars
 
 import pandas as pd
 import polars as pl
