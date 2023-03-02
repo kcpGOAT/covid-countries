@@ -3,6 +3,9 @@ import requests
 
 covid_table = []
 covid_data = requests.get("https://www.worldometers.info/coronavirus/")
+
+# With no piping format 
+
 soup = BeautifulSoup(covid_data.text, "html.parser")
 
 table_soup = soup.find("table", attrs = {"id": "main_table_countries_today"})
